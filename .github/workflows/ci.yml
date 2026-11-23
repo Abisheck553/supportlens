@@ -63,5 +63,5 @@ jobs:
         run: |
           docker run -d --name supportlens-ci -p 127.0.0.1:8000:8000 supportlens:ci
           trap 'docker logs supportlens-ci; docker rm -f supportlens-ci' EXIT
-          curl --fail --retry 20 --retry-delay 2 --retry-connrefused http://127.0.0.1:8000/api/health
+          curl --fail --retry 30 --retry-delay 2 --retry-all-errors http://127.0.0.1:8000/api/health
           curl --fail http://127.0.0.1:8000/ > /dev/null
