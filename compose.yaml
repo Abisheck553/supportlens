@@ -1,0 +1,13 @@
+services:
+  supportlens:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////app/data/supportlens.db
+      ANSWER_PROVIDER: extractive
+      ENABLE_SEMANTIC: "false"
+    volumes:
+      - supportlens-data:/app/data
+volumes:
+  supportlens-data:

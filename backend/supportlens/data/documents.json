@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "returns.md",
+    "title": "Returns & exchanges",
+    "content": "# Returns & exchanges\n\nCustomers may return unused physical products within 30 days of delivery. Items must be in their original packaging with proof of purchase. A return after 20 days is eligible if those conditions are met. Personalized items and digital downloads are not returnable.\n\nStart a return from Orders > Request a return. Select the item and reason, then download the prepaid return label. Standard returns are free. Exchanges use the same process; choose Exchange and select the replacement size or color."
+  },
+  {
+    "filename": "refunds.md",
+    "title": "Refunds & payment timing",
+    "content": "# Refunds & payment timing\n\nRefunds are issued to the original payment method within 5\u201310 business days after the warehouse receives and inspects the returned item. Bank processing may take additional time. We cannot refund a different card or bank account.\n\nIf a refund is missing after 10 business days, contact support with your order number and return tracking number. Original expedited shipping charges are not refundable unless the item arrived damaged or incorrect."
+  },
+  {
+    "filename": "shipping.md",
+    "title": "Shipping & delivery",
+    "content": "# Shipping & delivery\n\nStandard shipping takes 3\u20135 business days after dispatch and is free on orders of \u20ac50 or more. Orders under \u20ac50 have a \u20ac4.90 standard shipping fee. Express shipping takes 1\u20132 business days and costs \u20ac9.90.\n\nOrders ship Monday through Friday, excluding public holidays. The tracking link appears in Orders and in the dispatch email. If tracking shows delivered but the parcel is missing, check nearby delivery locations and contact support within 48 hours. International shipping is currently available only within the European Union."
+  },
+  {
+    "filename": "account.md",
+    "title": "Account access & security",
+    "content": "# Account access & security\n\nTo reset a forgotten password, select Forgot password on the sign-in page and enter your account email. The reset link expires after 30 minutes. Check spam if the email does not arrive. Request a new link if yours has expired.\n\nEnable two-factor authentication under Settings > Security using an authenticator app. Save the recovery codes in a secure place. If you lose access to both your authenticator and recovery codes, contact support for identity verification. Never share passwords or one-time codes with support."
+  },
+  {
+    "filename": "billing.md",
+    "title": "Subscriptions & billing",
+    "content": "# Subscriptions & billing\n\nThe Starter subscription costs \u20ac12 per month and the Pro subscription costs \u20ac29 per month, excluding applicable taxes. Both renew monthly. Download invoices from Settings > Billing > Invoices. You can update your payment card in Settings > Billing > Payment method.\n\nCancel your subscription from Settings > Billing > Cancel subscription. Access continues until the end of the current paid period. Cancellation prevents the next renewal; it does not automatically refund the current period. To investigate a duplicate charge, send support the invoice numbers; do not send full card details."
+  },
+  {
+    "filename": "troubleshooting.md",
+    "title": "App troubleshooting",
+    "content": "# App troubleshooting\n\nIf the web app will not load, refresh the page, check your internet connection, disable browser extensions, and try a private browsing window. Support covers the two most recent major versions of Chrome, Firefox, Safari, and Edge.\n\nFor upload failures, check that the file is PDF, Markdown, or plain text and smaller than 5 MB. Scanned image-only PDFs need OCR before uploading. If an error continues, send support the error message, approximate time, browser version, and steps to reproduce. Never include passwords or payment credentials in a screenshot."
+  },
+  {
+    "filename": "orders.md",
+    "title": "Changing & cancelling orders",
+    "content": "# Changing & cancelling orders\n\nYou can change the delivery address or cancel an order within one hour of purchase, as long as it has not been dispatched. Open Orders, select the order, and choose Edit address or Cancel order.\n\nOnce dispatched, an order cannot be edited or cancelled. Wait for delivery and use the standard return process if eligible. For a damaged item, contact support within seven days of delivery with your order number and a photo of the damage. Support will arrange a replacement or refund after review."
+  },
+  {
+    "filename": "privacy.md",
+    "title": "Data export & deletion",
+    "content": "# Data export & deletion\n\nRequest a copy of your account data from Settings > Privacy > Export data. An export download link is emailed within 72 hours and remains valid for seven days.\n\nRequest account deletion from Settings > Privacy > Delete account. You must confirm by email. Deletion is completed within 30 days after confirmation. Some billing records may be retained where legally required. Deleting your account also cancels future subscription renewals. Contact support before deletion if you have an unresolved order or refund."
+  }
+]

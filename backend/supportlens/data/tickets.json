@@ -1,0 +1,327 @@
+{
+  "description": "Hand-authored synthetic examples. Train and test texts are disjoint; shared author and narrow domain limit external validity.",
+  "train": [
+    {
+      "text": "I was billed twice this month",
+      "label": "billing"
+    },
+    {
+      "text": "Where can I find my invoice",
+      "label": "billing"
+    },
+    {
+      "text": "Please cancel my subscription",
+      "label": "billing"
+    },
+    {
+      "text": "How do I change my payment card",
+      "label": "billing"
+    },
+    {
+      "text": "The payment failed on renewal",
+      "label": "billing"
+    },
+    {
+      "text": "Why is there an extra charge",
+      "label": "billing"
+    },
+    {
+      "text": "I need a tax invoice",
+      "label": "billing"
+    },
+    {
+      "text": "Upgrade my monthly plan to Pro",
+      "label": "billing"
+    },
+    {
+      "text": "When is my next billing date",
+      "label": "billing"
+    },
+    {
+      "text": "The subscription price is wrong",
+      "label": "billing"
+    },
+    {
+      "text": "Please explain the charges on my bill",
+      "label": "billing"
+    },
+    {
+      "text": "My credit card was declined",
+      "label": "billing"
+    },
+    {
+      "text": "I forgot my password",
+      "label": "account"
+    },
+    {
+      "text": "I cannot log into my account",
+      "label": "account"
+    },
+    {
+      "text": "My password reset link expired",
+      "label": "account"
+    },
+    {
+      "text": "How do I enable two factor authentication",
+      "label": "account"
+    },
+    {
+      "text": "I lost my recovery codes",
+      "label": "account"
+    },
+    {
+      "text": "My account email address changed",
+      "label": "account"
+    },
+    {
+      "text": "Unlock my account please",
+      "label": "account"
+    },
+    {
+      "text": "I cannot receive the login verification code",
+      "label": "account"
+    },
+    {
+      "text": "Help me sign in again",
+      "label": "account"
+    },
+    {
+      "text": "Someone accessed my account",
+      "label": "account"
+    },
+    {
+      "text": "My authenticator app stopped working",
+      "label": "account"
+    },
+    {
+      "text": "The sign in page rejects my credentials",
+      "label": "account"
+    },
+    {
+      "text": "Where is my parcel",
+      "label": "shipping"
+    },
+    {
+      "text": "My shipment has not arrived",
+      "label": "shipping"
+    },
+    {
+      "text": "How long does delivery take",
+      "label": "shipping"
+    },
+    {
+      "text": "The tracking link does not work",
+      "label": "shipping"
+    },
+    {
+      "text": "My package says delivered but is missing",
+      "label": "shipping"
+    },
+    {
+      "text": "What is the express shipping fee",
+      "label": "shipping"
+    },
+    {
+      "text": "Do you deliver internationally",
+      "label": "shipping"
+    },
+    {
+      "text": "My order is delayed in transit",
+      "label": "shipping"
+    },
+    {
+      "text": "Can I track the delivery",
+      "label": "shipping"
+    },
+    {
+      "text": "The courier left my parcel elsewhere",
+      "label": "shipping"
+    },
+    {
+      "text": "When will my package be dispatched",
+      "label": "shipping"
+    },
+    {
+      "text": "Is standard shipping free",
+      "label": "shipping"
+    },
+    {
+      "text": "I want to return this product",
+      "label": "returns"
+    },
+    {
+      "text": "How do I get a refund",
+      "label": "returns"
+    },
+    {
+      "text": "Please send me a return label",
+      "label": "returns"
+    },
+    {
+      "text": "Can I exchange this for a different size",
+      "label": "returns"
+    },
+    {
+      "text": "My refund has not arrived",
+      "label": "returns"
+    },
+    {
+      "text": "The item arrived damaged and needs replacement",
+      "label": "returns"
+    },
+    {
+      "text": "What is the return window",
+      "label": "returns"
+    },
+    {
+      "text": "I received the wrong product",
+      "label": "returns"
+    },
+    {
+      "text": "Can I return an opened item",
+      "label": "returns"
+    },
+    {
+      "text": "How long until my refund is processed",
+      "label": "returns"
+    },
+    {
+      "text": "I need to exchange the color",
+      "label": "returns"
+    },
+    {
+      "text": "My return tracking shows received",
+      "label": "returns"
+    },
+    {
+      "text": "The app crashes when I open it",
+      "label": "technical"
+    },
+    {
+      "text": "The website is showing an error",
+      "label": "technical"
+    },
+    {
+      "text": "My PDF upload failed",
+      "label": "technical"
+    },
+    {
+      "text": "The screen freezes after clicking save",
+      "label": "technical"
+    },
+    {
+      "text": "The application will not load",
+      "label": "technical"
+    },
+    {
+      "text": "I see a blank page in my browser",
+      "label": "technical"
+    },
+    {
+      "text": "Which browsers do you support",
+      "label": "technical"
+    },
+    {
+      "text": "The upload button does nothing",
+      "label": "technical"
+    },
+    {
+      "text": "There is a server error message",
+      "label": "technical"
+    },
+    {
+      "text": "The website is extremely slow",
+      "label": "technical"
+    },
+    {
+      "text": "The file format is not supported",
+      "label": "technical"
+    },
+    {
+      "text": "The app stops responding",
+      "label": "technical"
+    }
+  ],
+  "test": [
+    {
+      "text": "I need last months invoice for accounting",
+      "label": "billing"
+    },
+    {
+      "text": "There are two identical charges on my card",
+      "label": "billing"
+    },
+    {
+      "text": "Stop my paid subscription from renewing",
+      "label": "billing"
+    },
+    {
+      "text": "The monthly payment was declined",
+      "label": "billing"
+    },
+    {
+      "text": "The password reset email never arrived",
+      "label": "account"
+    },
+    {
+      "text": "I lost access to the authenticator",
+      "label": "account"
+    },
+    {
+      "text": "I am unable to sign in with my credentials",
+      "label": "account"
+    },
+    {
+      "text": "How can I secure my account with two factor",
+      "label": "account"
+    },
+    {
+      "text": "Please locate my missing parcel",
+      "label": "shipping"
+    },
+    {
+      "text": "What is the delivery fee for express service",
+      "label": "shipping"
+    },
+    {
+      "text": "My shipment is stuck in transit",
+      "label": "shipping"
+    },
+    {
+      "text": "The courier has not delivered my package",
+      "label": "shipping"
+    },
+    {
+      "text": "I need a prepaid label to send this item back",
+      "label": "returns"
+    },
+    {
+      "text": "My returned item has not been refunded",
+      "label": "returns"
+    },
+    {
+      "text": "I would like an exchange for a larger size",
+      "label": "returns"
+    },
+    {
+      "text": "Is a product return possible after twenty days",
+      "label": "returns"
+    },
+    {
+      "text": "The application freezes on startup",
+      "label": "technical"
+    },
+    {
+      "text": "A file upload gives an error message",
+      "label": "technical"
+    },
+    {
+      "text": "My browser only displays a blank screen",
+      "label": "technical"
+    },
+    {
+      "text": "The website crashes every time I click save",
+      "label": "technical"
+    }
+  ]
+}

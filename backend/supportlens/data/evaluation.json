@@ -1,0 +1,130 @@
+[
+  {
+    "question": "Can I return an unused item after 20 days?",
+    "expected_source": "returns.md"
+  },
+  {
+    "question": "How do I get a prepaid return label?",
+    "expected_source": "returns.md"
+  },
+  {
+    "question": "Can I return a personalized product?",
+    "expected_source": "returns.md"
+  },
+  {
+    "question": "How many business days does a refund take?",
+    "expected_source": "refunds.md"
+  },
+  {
+    "question": "Can my refund go to a different card?",
+    "expected_source": "refunds.md"
+  },
+  {
+    "question": "What should I do if my refund is missing?",
+    "expected_source": "refunds.md"
+  },
+  {
+    "question": "How much is express shipping?",
+    "expected_source": "shipping.md"
+  },
+  {
+    "question": "When do I get free standard shipping?",
+    "expected_source": "shipping.md"
+  },
+  {
+    "question": "My parcel says delivered but it is missing. What next?",
+    "expected_source": "shipping.md"
+  },
+  {
+    "question": "How do I reset a forgotten password?",
+    "expected_source": "account.md"
+  },
+  {
+    "question": "How long is a password reset link valid?",
+    "expected_source": "account.md"
+  },
+  {
+    "question": "How do I enable two-factor authentication?",
+    "expected_source": "account.md"
+  },
+  {
+    "question": "How much does the Pro subscription cost?",
+    "expected_source": "billing.md"
+  },
+  {
+    "question": "Where can I download invoices?",
+    "expected_source": "billing.md"
+  },
+  {
+    "question": "If I cancel my subscription, when does access end?",
+    "expected_source": "billing.md"
+  },
+  {
+    "question": "Can I change the address on an order?",
+    "expected_source": "orders.md"
+  },
+  {
+    "question": "Can I cancel an order after dispatch?",
+    "expected_source": "orders.md"
+  },
+  {
+    "question": "What do I do if my item arrived damaged?",
+    "expected_source": "orders.md"
+  },
+  {
+    "question": "The web app will not load. What should I try?",
+    "expected_source": "troubleshooting.md"
+  },
+  {
+    "question": "Why does my scanned PDF upload fail?",
+    "expected_source": "troubleshooting.md"
+  },
+  {
+    "question": "Which browsers are supported?",
+    "expected_source": "troubleshooting.md"
+  },
+  {
+    "question": "How long does a data export take?",
+    "expected_source": "privacy.md"
+  },
+  {
+    "question": "How do I delete my account?",
+    "expected_source": "privacy.md"
+  },
+  {
+    "question": "How long does the export download link last?",
+    "expected_source": "privacy.md"
+  },
+  {
+    "question": "What is the weather in Tokyo?",
+    "expected_source": null
+  },
+  {
+    "question": "Who won the football championship?",
+    "expected_source": null
+  },
+  {
+    "question": "Write a poem about dragons.",
+    "expected_source": null
+  },
+  {
+    "question": "Do you offer a lifetime warranty?",
+    "expected_source": null
+  },
+  {
+    "question": "Can I pay using cryptocurrency?",
+    "expected_source": null
+  },
+  {
+    "question": "What is the CEO phone number?",
+    "expected_source": null
+  },
+  {
+    "question": "How much is the student subscription discount?",
+    "expected_source": null
+  },
+  {
+    "question": "What are your Saturday telephone support hours?",
+    "expected_source": null
+  }
+]

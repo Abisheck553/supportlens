@@ -1,0 +1,67 @@
+name: Check SupportLens
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - run: pip install -r requirements.lock
+      - run: python -m pytest -q
+      - run: PYTHONPATH=backend python -m supportlens.evaluate --output reports/ci.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: evaluation-report
+          path: reports/ci.json
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install -g pnpm@11.25.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+  postgres:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: supportlens
+          POSTGRES_PASSWORD: ci-only-password
+          POSTGRES_DB: supportlens_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.lock 'psycopg[binary]==3.3.9'
+      - run: python -m pytest tests/test_postgres.py -q
+        env:
+          TEST_DATABASE_URL: postgresql+psycopg://supportlens:ci-only-password@localhost:5432/supportlens_test
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t supportlens:ci .
+      - name: Check the container starts and serves the app
+        run: |
+          docker run -d --name supportlens-ci -p 127.0.0.1:8000:8000 supportlens:ci
+          trap 'docker logs supportlens-ci; docker rm -f supportlens-ci' EXIT
+          curl --fail --retry 20 --retry-delay 2 --retry-connrefused http://127.0.0.1:8000/api/health
+          curl --fail http://127.0.0.1:8000/ > /dev/null

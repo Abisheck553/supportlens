@@ -1,0 +1,842 @@
+{
+  "created_at": "2026-11-23T00:09:11.164243+00:00",
+  "dataset": "SupportLens synthetic demo benchmark v1",
+  "question_count": 32,
+  "answerable_count": 24,
+  "unknown_count": 8,
+  "retrieval_mode": "BM25 + TF-IDF",
+  "limitations": "Small, hand-authored synthetic benchmark, not independent real-world validation. Retrieval metrics do not measure generated-answer correctness. Thresholds are heuristic. Latencies use a warm in-process index.",
+  "retrieval": [
+    {
+      "method": "bm25",
+      "recall_at_3": 0.9167,
+      "mrr_at_3": 0.9167,
+      "unknown_abstention_rate": 0.5,
+      "mean_latency_ms": 0.3,
+      "cases": [
+        {
+          "question": "Can I return an unused item after 20 days?",
+          "expected_source": "returns.md",
+          "retrieved": [
+            "returns.md",
+            "refunds.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.39
+        },
+        {
+          "question": "How do I get a prepaid return label?",
+          "expected_source": "returns.md",
+          "retrieved": [
+            "returns.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.41
+        },
+        {
+          "question": "Can I return a personalized product?",
+          "expected_source": "returns.md",
+          "retrieved": [
+            "returns.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.29
+        },
+        {
+          "question": "How many business days does a refund take?",
+          "expected_source": "refunds.md",
+          "retrieved": [
+            "refunds.md",
+            "shipping.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.31
+        },
+        {
+          "question": "Can my refund go to a different card?",
+          "expected_source": "refunds.md",
+          "retrieved": [
+            "refunds.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.31
+        },
+        {
+          "question": "What should I do if my refund is missing?",
+          "expected_source": "refunds.md",
+          "retrieved": [
+            "refunds.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.36
+        },
+        {
+          "question": "How much is express shipping?",
+          "expected_source": "shipping.md",
+          "retrieved": [
+            "shipping.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.27
+        },
+        {
+          "question": "When do I get free standard shipping?",
+          "expected_source": "shipping.md",
+          "retrieved": [
+            "shipping.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "My parcel says delivered but it is missing. What next?",
+          "expected_source": "shipping.md",
+          "retrieved": [
+            "shipping.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "How do I reset a forgotten password?",
+          "expected_source": "account.md",
+          "retrieved": [
+            "account.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.24
+        },
+        {
+          "question": "How long is a password reset link valid?",
+          "expected_source": "account.md",
+          "retrieved": [
+            "account.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.24
+        },
+        {
+          "question": "How do I enable two-factor authentication?",
+          "expected_source": "account.md",
+          "retrieved": [
+            "account.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.53
+        },
+        {
+          "question": "How much does the Pro subscription cost?",
+          "expected_source": "billing.md",
+          "retrieved": [
+            "billing.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.33
+        },
+        {
+          "question": "Where can I download invoices?",
+          "expected_source": "billing.md",
+          "retrieved": [
+            "billing.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "If I cancel my subscription, when does access end?",
+          "expected_source": "billing.md",
+          "retrieved": [
+            "billing.md",
+            "account.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "Can I change the address on an order?",
+          "expected_source": "orders.md",
+          "retrieved": [
+            "orders.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.24
+        },
+        {
+          "question": "Can I cancel an order after dispatch?",
+          "expected_source": "orders.md",
+          "retrieved": [
+            "orders.md",
+            "shipping.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.27
+        },
+        {
+          "question": "What do I do if my item arrived damaged?",
+          "expected_source": "orders.md",
+          "retrieved": [
+            "refunds.md"
+          ],
+          "rank": null,
+          "abstained": false,
+          "passed": false,
+          "latency_ms": 0.24
+        },
+        {
+          "question": "The web app will not load. What should I try?",
+          "expected_source": "troubleshooting.md",
+          "retrieved": [
+            "troubleshooting.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.27
+        },
+        {
+          "question": "Why does my scanned PDF upload fail?",
+          "expected_source": "troubleshooting.md",
+          "retrieved": [
+            "troubleshooting.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.36
+        },
+        {
+          "question": "Which browsers are supported?",
+          "expected_source": "troubleshooting.md",
+          "retrieved": [],
+          "rank": null,
+          "abstained": true,
+          "passed": false,
+          "latency_ms": 0.27
+        },
+        {
+          "question": "How long does a data export take?",
+          "expected_source": "privacy.md",
+          "retrieved": [
+            "privacy.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.35
+        },
+        {
+          "question": "How do I delete my account?",
+          "expected_source": "privacy.md",
+          "retrieved": [
+            "privacy.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.3
+        },
+        {
+          "question": "How long does the export download link last?",
+          "expected_source": "privacy.md",
+          "retrieved": [
+            "privacy.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.3
+        },
+        {
+          "question": "What is the weather in Tokyo?",
+          "expected_source": null,
+          "retrieved": [],
+          "rank": null,
+          "abstained": true,
+          "passed": true,
+          "latency_ms": 0.32
+        },
+        {
+          "question": "Who won the football championship?",
+          "expected_source": null,
+          "retrieved": [],
+          "rank": null,
+          "abstained": true,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "Write a poem about dragons.",
+          "expected_source": null,
+          "retrieved": [],
+          "rank": null,
+          "abstained": true,
+          "passed": true,
+          "latency_ms": 0.24
+        },
+        {
+          "question": "Do you offer a lifetime warranty?",
+          "expected_source": null,
+          "retrieved": [],
+          "rank": null,
+          "abstained": true,
+          "passed": true,
+          "latency_ms": 0.31
+        },
+        {
+          "question": "Can I pay using cryptocurrency?",
+          "expected_source": null,
+          "retrieved": [
+            "account.md"
+          ],
+          "rank": null,
+          "abstained": false,
+          "passed": false,
+          "latency_ms": 0.29
+        },
+        {
+          "question": "What is the CEO phone number?",
+          "expected_source": null,
+          "retrieved": [
+            "refunds.md",
+            "orders.md"
+          ],
+          "rank": null,
+          "abstained": false,
+          "passed": false,
+          "latency_ms": 0.29
+        },
+        {
+          "question": "How much is the student subscription discount?",
+          "expected_source": null,
+          "retrieved": [
+            "billing.md",
+            "privacy.md"
+          ],
+          "rank": null,
+          "abstained": false,
+          "passed": false,
+          "latency_ms": 0.27
+        },
+        {
+          "question": "What are your Saturday telephone support hours?",
+          "expected_source": null,
+          "retrieved": [
+            "privacy.md",
+            "shipping.md"
+          ],
+          "rank": null,
+          "abstained": false,
+          "passed": false,
+          "latency_ms": 0.26
+        }
+      ]
+    },
+    {
+      "method": "hybrid",
+      "recall_at_3": 0.9167,
+      "mrr_at_3": 0.9167,
+      "unknown_abstention_rate": 0.5,
+      "mean_latency_ms": 0.31,
+      "cases": [
+        {
+          "question": "Can I return an unused item after 20 days?",
+          "expected_source": "returns.md",
+          "retrieved": [
+            "returns.md",
+            "refunds.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.27
+        },
+        {
+          "question": "How do I get a prepaid return label?",
+          "expected_source": "returns.md",
+          "retrieved": [
+            "returns.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "Can I return a personalized product?",
+          "expected_source": "returns.md",
+          "retrieved": [
+            "returns.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.32
+        },
+        {
+          "question": "How many business days does a refund take?",
+          "expected_source": "refunds.md",
+          "retrieved": [
+            "refunds.md",
+            "shipping.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.39
+        },
+        {
+          "question": "Can my refund go to a different card?",
+          "expected_source": "refunds.md",
+          "retrieved": [
+            "refunds.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.36
+        },
+        {
+          "question": "What should I do if my refund is missing?",
+          "expected_source": "refunds.md",
+          "retrieved": [
+            "refunds.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.31
+        },
+        {
+          "question": "How much is express shipping?",
+          "expected_source": "shipping.md",
+          "retrieved": [
+            "shipping.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "When do I get free standard shipping?",
+          "expected_source": "shipping.md",
+          "retrieved": [
+            "shipping.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "My parcel says delivered but it is missing. What next?",
+          "expected_source": "shipping.md",
+          "retrieved": [
+            "shipping.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "How do I reset a forgotten password?",
+          "expected_source": "account.md",
+          "retrieved": [
+            "account.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "How long is a password reset link valid?",
+          "expected_source": "account.md",
+          "retrieved": [
+            "account.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "How do I enable two-factor authentication?",
+          "expected_source": "account.md",
+          "retrieved": [
+            "account.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.26
+        },
+        {
+          "question": "How much does the Pro subscription cost?",
+          "expected_source": "billing.md",
+          "retrieved": [
+            "billing.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.31
+        },
+        {
+          "question": "Where can I download invoices?",
+          "expected_source": "billing.md",
+          "retrieved": [
+            "billing.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.27
+        },
+        {
+          "question": "If I cancel my subscription, when does access end?",
+          "expected_source": "billing.md",
+          "retrieved": [
+            "billing.md",
+            "account.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.26
+        },
+        {
+          "question": "Can I change the address on an order?",
+          "expected_source": "orders.md",
+          "retrieved": [
+            "orders.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.27
+        },
+        {
+          "question": "Can I cancel an order after dispatch?",
+          "expected_source": "orders.md",
+          "retrieved": [
+            "orders.md",
+            "shipping.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.57
+        },
+        {
+          "question": "What do I do if my item arrived damaged?",
+          "expected_source": "orders.md",
+          "retrieved": [
+            "refunds.md"
+          ],
+          "rank": null,
+          "abstained": false,
+          "passed": false,
+          "latency_ms": 0.32
+        },
+        {
+          "question": "The web app will not load. What should I try?",
+          "expected_source": "troubleshooting.md",
+          "retrieved": [
+            "troubleshooting.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.43
+        },
+        {
+          "question": "Why does my scanned PDF upload fail?",
+          "expected_source": "troubleshooting.md",
+          "retrieved": [
+            "troubleshooting.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.45
+        },
+        {
+          "question": "Which browsers are supported?",
+          "expected_source": "troubleshooting.md",
+          "retrieved": [],
+          "rank": null,
+          "abstained": true,
+          "passed": false,
+          "latency_ms": 0.4
+        },
+        {
+          "question": "How long does a data export take?",
+          "expected_source": "privacy.md",
+          "retrieved": [
+            "privacy.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.33
+        },
+        {
+          "question": "How do I delete my account?",
+          "expected_source": "privacy.md",
+          "retrieved": [
+            "privacy.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.31
+        },
+        {
+          "question": "How long does the export download link last?",
+          "expected_source": "privacy.md",
+          "retrieved": [
+            "privacy.md"
+          ],
+          "rank": 1,
+          "abstained": false,
+          "passed": true,
+          "latency_ms": 0.4
+        },
+        {
+          "question": "What is the weather in Tokyo?",
+          "expected_source": null,
+          "retrieved": [],
+          "rank": null,
+          "abstained": true,
+          "passed": true,
+          "latency_ms": 0.35
+        },
+        {
+          "question": "Who won the football championship?",
+          "expected_source": null,
+          "retrieved": [],
+          "rank": null,
+          "abstained": true,
+          "passed": true,
+          "latency_ms": 0.27
+        },
+        {
+          "question": "Write a poem about dragons.",
+          "expected_source": null,
+          "retrieved": [],
+          "rank": null,
+          "abstained": true,
+          "passed": true,
+          "latency_ms": 0.26
+        },
+        {
+          "question": "Do you offer a lifetime warranty?",
+          "expected_source": null,
+          "retrieved": [],
+          "rank": null,
+          "abstained": true,
+          "passed": true,
+          "latency_ms": 0.31
+        },
+        {
+          "question": "Can I pay using cryptocurrency?",
+          "expected_source": null,
+          "retrieved": [
+            "account.md"
+          ],
+          "rank": null,
+          "abstained": false,
+          "passed": false,
+          "latency_ms": 0.25
+        },
+        {
+          "question": "What is the CEO phone number?",
+          "expected_source": null,
+          "retrieved": [
+            "refunds.md",
+            "orders.md"
+          ],
+          "rank": null,
+          "abstained": false,
+          "passed": false,
+          "latency_ms": 0.24
+        },
+        {
+          "question": "How much is the student subscription discount?",
+          "expected_source": null,
+          "retrieved": [
+            "billing.md",
+            "privacy.md"
+          ],
+          "rank": null,
+          "abstained": false,
+          "passed": false,
+          "latency_ms": 0.24
+        },
+        {
+          "question": "What are your Saturday telephone support hours?",
+          "expected_source": null,
+          "retrieved": [
+            "privacy.md",
+            "shipping.md"
+          ],
+          "rank": null,
+          "abstained": false,
+          "passed": false,
+          "latency_ms": 0.25
+        }
+      ]
+    }
+  ],
+  "classifier": {
+    "test_examples": 20,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "majority_baseline_accuracy": 0.2,
+    "labels": [
+      "account",
+      "billing",
+      "returns",
+      "shipping",
+      "technical"
+    ],
+    "predictions": [
+      {
+        "text": "I need last months invoice for accounting",
+        "label": "billing",
+        "predicted": "billing"
+      },
+      {
+        "text": "There are two identical charges on my card",
+        "label": "billing",
+        "predicted": "billing"
+      },
+      {
+        "text": "Stop my paid subscription from renewing",
+        "label": "billing",
+        "predicted": "billing"
+      },
+      {
+        "text": "The monthly payment was declined",
+        "label": "billing",
+        "predicted": "billing"
+      },
+      {
+        "text": "The password reset email never arrived",
+        "label": "account",
+        "predicted": "account"
+      },
+      {
+        "text": "I lost access to the authenticator",
+        "label": "account",
+        "predicted": "account"
+      },
+      {
+        "text": "I am unable to sign in with my credentials",
+        "label": "account",
+        "predicted": "account"
+      },
+      {
+        "text": "How can I secure my account with two factor",
+        "label": "account",
+        "predicted": "account"
+      },
+      {
+        "text": "Please locate my missing parcel",
+        "label": "shipping",
+        "predicted": "shipping"
+      },
+      {
+        "text": "What is the delivery fee for express service",
+        "label": "shipping",
+        "predicted": "shipping"
+      },
+      {
+        "text": "My shipment is stuck in transit",
+        "label": "shipping",
+        "predicted": "shipping"
+      },
+      {
+        "text": "The courier has not delivered my package",
+        "label": "shipping",
+        "predicted": "shipping"
+      },
+      {
+        "text": "I need a prepaid label to send this item back",
+        "label": "returns",
+        "predicted": "returns"
+      },
+      {
+        "text": "My returned item has not been refunded",
+        "label": "returns",
+        "predicted": "returns"
+      },
+      {
+        "text": "I would like an exchange for a larger size",
+        "label": "returns",
+        "predicted": "returns"
+      },
+      {
+        "text": "Is a product return possible after twenty days",
+        "label": "returns",
+        "predicted": "returns"
+      },
+      {
+        "text": "The application freezes on startup",
+        "label": "technical",
+        "predicted": "technical"
+      },
+      {
+        "text": "A file upload gives an error message",
+        "label": "technical",
+        "predicted": "technical"
+      },
+      {
+        "text": "My browser only displays a blank screen",
+        "label": "technical",
+        "predicted": "technical"
+      },
+      {
+        "text": "The website crashes every time I click save",
+        "label": "technical",
+        "predicted": "technical"
+      }
+    ]
+  }
+}
